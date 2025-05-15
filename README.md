@@ -2,7 +2,7 @@
 PromptCrafter is a powerful and user-friendly Generative AI web application that automatically generates LinkedIn-style social media posts using few-shot learning, structured prompt engineering, and LLM-based text generation. Designed with both practical applications and academic relevance in mind, this tool demonstrates how modern LLMs can be customized for creative content generation through a clean UI and intelligent prompt chaining. Built using Streamlit as the frontend and LangChain with Groq’s LLaMA 3.3-70 b-versatile as the backend LLM, the app allows users to select the desired topic, length, and language (English or Banglish) for the post. It then dynamically generates a well-structured LinkedIn post by sampling from a curated dataset of examples.
 
 # Demo (Performance)
-![Image](https://github.com/user-attachments/assets/bc7233df-2b98-4b12-9448-e4c077283666)
+![Image](https://github.com/user-attachments/assets/a94be5a4-140c-441c-af25-aa9818572c62)
 
 # Features
 ✅ Streamlit UI with left–right layout for intuitive interaction and real-time preview <br/>
