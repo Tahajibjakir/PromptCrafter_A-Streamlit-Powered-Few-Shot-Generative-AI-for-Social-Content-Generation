@@ -17,12 +17,12 @@ PromptCrafter is a powerful and user-friendly Generative AI web application that
 
 # Installation
 
-git clone https://github.com/yourusername/linkedin-post-generator.git
-cd linkedin-post-generator
+git clone https://github.com/yourusername/linkedin-post-generator.git](https://github.com/Tahajibjakir/PromptCrafter_A-Streamlit-Powered-Few-Shot-Generative-AI-for-Social-Content-Generation.git <br\>
+cd PromptCrafter_A-Streamlit-Powered-Few-Shot-Generative-AI-for-Social-Content-Generation <br\>
 
-Create virtual env (optional)
-python -m venv venv
-source venv/bin/activate  # or venv\Scripts\activate on Windows
+Create virtual env (optional) <br\>
+python -m venv venv <br\>
+source venv/bin/activate  # or venv\Scripts\activate on Windows <br\>
 
 pip install -r requirements.txt
 
