@@ -29,33 +29,21 @@ pip install -r requirements.txt
 # Model Details
 This project uses Groq-hosted LLaMA-3.3-70 b-versatile via the langchain_groq integration for fast and efficient generation.<br\> The LLM is guided through a few-shot prompt strategy where example posts are dynamically injected based on selected inputs like topic, length, and language.
 
-Model Type: Generative Large Language Model (Groq LLaMA 3)
+• Model Type: Generative Large Language Model (Groq LLaMA 3)
 
-Prompt Strategy: Few-shot learning using LangChain’s PromptTemplate module
+• Prompt Strategy: Few-shot learning using LangChain’s PromptTemplate module
 
-Response Parsing: Handled using JsonOutputParser for structured metadata extraction (line count, tags, etc.)
+• Response Parsing: Handled using JsonOutputParser for structured metadata extraction (line count, tags, etc.)
 
-Metadata Extraction: Custom LangChain prompt to extract metadata from raw posts during preprocessing
+• Metadata Extraction: Custom LangChain prompt to extract metadata from raw posts during preprocessing
 
-Tag Normalization: Another LLM-based prompt pipeline to unify diverse tags into a controlled set for consistency
+• Tag Normalization: Another LLM-based prompt pipeline to unify diverse tags into a controlled set for consistency
 
 # Project Structure
+![Image](https://github.com/user-attachments/assets/23ab2f0e-e9a0-4fac-98f6-21e105792fe9)
 
-PromptCrafter/
-├── data/
-│   ├── raw_post_data.json           # Raw LinkedIn posts (unprocessed)
-│   └── structured_post_data.json    # Processed posts with language, tags, line count
-│
-├── main.py                          # Streamlit UI and frontend layout
-├── few_shot.py                      # Few-shot filtering logic (based on topic, language, length)
-├── post_generator.py                # Constructs final prompt and invokes LLM
-├── preprocessing.py                 # Metadata extraction + tag unification from raw posts
-├── LLM_helper.py                    # Groq LLaMA 3 setup via LangChain
-│
-├── requirements.txt                 # Project dependencies
-└── README.md       
-
-# Results & Screenshots
+# Project's Screenshots
+![Image](https://github.com/user-attachments/assets/85e127cc-fbb9-4b88-8196-838ddcec169f)
 
 # Contributing
 Contributions are welcome! Please open an issue or submit a pull request.
