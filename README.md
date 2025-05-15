@@ -17,14 +17,51 @@ PromptCrafter is a powerful and user-friendly Generative AI web application that
 
 # Installation
 
-# Usage
+git clone https://github.com/yourusername/linkedin-post-generator.git
+cd linkedin-post-generator
+
+Create virtual env (optional)
+python -m venv venv
+source venv/bin/activate  # or venv\Scripts\activate on Windows
+
+pip install -r requirements.txt
 
 # Model Details
+This project uses Groq-hosted LLaMA-3.3-70 b-versatile via the langchain_groq integration for fast and efficient generation.<br\> The LLM is guided through a few-shot prompt strategy where example posts are dynamically injected based on selected inputs like topic, length, and language.
+
+Model Type: Generative Large Language Model (Groq LLaMA 3)
+
+Prompt Strategy: Few-shot learning using LangChain’s PromptTemplate module
+
+Response Parsing: Handled using JsonOutputParser for structured metadata extraction (line count, tags, etc.)
+
+Metadata Extraction: Custom LangChain prompt to extract metadata from raw posts during preprocessing
+
+Tag Normalization: Another LLM-based prompt pipeline to unify diverse tags into a controlled set for consistency
 
 # Project Structure
+
+PromptCrafter/
+├── data/
+│   ├── raw_post_data.json           # Raw LinkedIn posts (unprocessed)
+│   └── structured_post_data.json    # Processed posts with language, tags, line count
+│
+├── main.py                          # Streamlit UI and frontend layout
+├── few_shot.py                      # Few-shot filtering logic (based on topic, language, length)
+├── post_generator.py                # Constructs final prompt and invokes LLM
+├── preprocessing.py                 # Metadata extraction + tag unification from raw posts
+├── LLM_helper.py                    # Groq LLaMA 3 setup via LangChain
+│
+├── requirements.txt                 # Project dependencies
+└── README.md       
 
 # Results & Screenshots
 
 # Contributing
+Contributions are welcome! Please open an issue or submit a pull request.
+
 
 # Contact / Credits
+Developed by Tahajib Jakir Khan  
+📧 tahajibjakirkhan00@gmail.com 
+📎 [LinkedIn](https://www.linkedin.com/in/tahajib-jakir-khan-53b30822b/)
